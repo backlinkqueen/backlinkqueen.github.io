@@ -10,6 +10,7 @@
     "deploy:cf": "vite build && wrangler pages deploy --branch main",
     "deploy:netlify": "vite build && netlify deploy --prod --no-build --dir dist",
     "deploy:vercel": "vercel deploy --prod --yes",
+    "deploy:neocities": "vite build && node --env-file=.env.deploy scripts/neocities.mjs",
     "deploy:surge": "vite build && node --env-file=.env.deploy node_modules/surge/bin/surge ./dist backlinkqueen.surge.sh",
     "deploy:all": "vite build && firebase deploy --only hosting && wrangler pages deploy --branch main && netlify deploy --prod --no-build --dir dist"
   },
