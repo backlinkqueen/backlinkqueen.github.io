@@ -1,0 +1,8 @@
+// Cloudflare Workers (static assets) -> backlinkqueen.<subdomain>.workers.dev
+// Tách khỏi wrangler.toml ở gốc (file đó dành cho Cloudflare Pages)
+{
+  "name": "backlinkqueen",
+  "compatibility_date": "2026-10-01",
+  "assets": { "directory": "../dist" },
+  "workers_dev": true
+}

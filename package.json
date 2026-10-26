@@ -10,6 +10,7 @@
     "deploy:cf": "vite build && wrangler pages deploy --branch main",
     "deploy:netlify": "vite build && netlify deploy --prod --no-build --dir dist",
     "deploy:vercel": "vercel deploy --prod --yes",
+    "deploy:workers": "vite build && wrangler deploy -c workers/wrangler.jsonc",
     "deploy:r2": "vite build && node scripts/r2.mjs",
     "deploy:neocities": "vite build && node --env-file=.env.deploy scripts/neocities.mjs",
     "deploy:telegraph": "node --env-file=.env.deploy scripts/telegraph.mjs",
