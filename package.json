@@ -13,6 +13,7 @@
     "deploy:workers": "vite build && wrangler deploy -c workers/wrangler.jsonc",
     "deploy:r2": "vite build && node scripts/r2.mjs",
     "deploy:neocities": "vite build && node --env-file=.env.deploy scripts/neocities.mjs",
+    "deploy:rentry": "node --env-file=.env.deploy scripts/rentry.mjs",
     "deploy:telegraph": "node --env-file=.env.deploy scripts/telegraph.mjs",
     "deploy:surge": "vite build && node --env-file=.env.deploy node_modules/surge/bin/surge ./dist backlinkqueen.surge.sh",
     "deploy:all": "vite build && firebase deploy --only hosting && wrangler pages deploy --branch main && netlify deploy --prod --no-build --dir dist"
