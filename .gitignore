@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.firebase/
+firebase-debug.log
+.wrangler/
+.dev.vars
+
+# Local Netlify folder
+.netlify
