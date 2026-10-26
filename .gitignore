@@ -8,3 +8,4 @@ firebase-debug.log
 
 # Local Netlify folder
 .netlify
+.deploy/

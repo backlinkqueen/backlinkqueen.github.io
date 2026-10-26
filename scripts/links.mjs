@@ -13,6 +13,10 @@ export const LINKS = [
   ['Render', 'https://backlinkqueen.onrender.com'],
   ['Surge', 'https://backlinkqueen.surge.sh'],
   ['Neocities', 'https://backlinkqueen.neocities.org'],
+  ['Bitbucket Cloud', 'https://backlinkqueen.bitbucket.io'],
+  ['Hugging Face Spaces', 'https://backlinkqueen-backlinkqueen.static.hf.space'],
+  ['Tencent EdgeOne', 'https://backlinkqueen.edgeone.dev'],
+  ['Appwrite Sites', 'https://backlinkqueen.appwrite.network'],
 ];
 
 export const INTRO = 'Backlink Queen là một trang web tĩnh nhỏ (Vite), cùng một bản build được đăng lên nhiều dịch vụ hosting miễn phí.';
