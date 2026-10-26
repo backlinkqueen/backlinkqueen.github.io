@@ -16,8 +16,8 @@ concurrency:
 
 jobs:
   deploy:
-    # Repo chính backlinkqueen để private (gói free không có Pages) -> chỉ chạy ở repo public
-    if: github.repository == 'wresunny/backlinkqueen-pages'
+    # Repo chính backlinkqueen để private (gói free không có Pages) -> chỉ chạy ở các repo public
+    if: github.repository == 'wresunny/backlinkqueen-pages' || github.repository == 'backlinkqueen/backlinkqueen.github.io'
     runs-on: ubuntu-latest
     environment:
       name: github-pages
