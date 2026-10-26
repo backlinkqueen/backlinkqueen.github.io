@@ -4,6 +4,7 @@ dist/
 firebase-debug.log
 .wrangler/
 .dev.vars
+.env.deploy
 
 # Local Netlify folder
 .netlify
