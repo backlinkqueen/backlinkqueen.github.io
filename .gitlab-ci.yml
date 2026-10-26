@@ -1,0 +1,15 @@
+# GitLab Pages: build Vite rồi xuất bản thư mục dist
+pages:
+  image: node:22
+  stage: deploy
+  script:
+    # Chỉ cài vite để build, bỏ qua các CLI deploy nặng
+    - npm install --no-save --no-package-lock vite@7
+    - npx vite build
+  pages:
+    publish: dist
+  artifacts:
+    paths:
+      - dist
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
